@@ -1,0 +1,51 @@
+[
+  {
+    "course_id": "DS2002",
+    "section": "001",
+    "title": "Data Science Systems",
+    "level": 2000,
+    "instructors": [
+      {
+        "name": "Austin Rivera",
+        "role": "Primary"
+      },
+      {
+        "name": "Heywood Williams-Tracy",
+        "role": "TA"
+      }
+    ]
+  },
+  {
+    "course_id": "EVSC3300",
+    "title": "Atmosphere and Weather",
+    "level": 3000,
+    "instructors": [
+      {
+        "name": "Sally Pusede",
+        "role": "Primary"
+      }
+    ]
+  },
+  {
+    "course_id": "EVSC3200",
+    "title": "Ecology",
+    "level": 3000,
+    "instructors": [
+      {
+        "name": "Howard Epstein",
+        "role": "Primary"
+      }
+    ]
+  },
+  {
+    "course_id": "MATH3350",
+    "title": "Applied Linear Algebra",
+    "level": 3000,
+    "instructors": [
+      {
+        "name": "Jeff Holt",
+        "role": "Primary"
+      }
+    ]
+  }
+]
