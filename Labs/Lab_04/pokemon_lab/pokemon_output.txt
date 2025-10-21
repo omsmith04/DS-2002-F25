@@ -1,0 +1,63 @@
+Defaulting to Test Mode.
+----------------------------------------
+Portfolio Summary for: test_card_portfolio.csv
+----------------------------------------
+Total Portfolio Value: $326.55
+
+--- Most Valuable Card ---
+Name:  Charizard
+ID:    base0-4
+Value: $250.75
+----------------------------------------
+Test complete.
+
+
+@omsmith04 ➜ .../DS-2002-F25/Labs/Lab_04/pokemon_lab (Lab_4) $ make Add_Set
+--- Adding New Card Set ---
+TCG Card Set ID): base1
+Fetching cards for set 'base1' from the Pokemon TCG API...
+@omsmith04 ➜ .../DS-2002-F25/Labs/Lab_04/pokemon_lab (Lab_4) $
+
+@omsmith04 ➜ .../DS-2002-F25/Labs/Lab_04/pokemon_lab (Lab_4) $ make Add_Set
+--- Adding New Card Set ---
+TCG Card Set ID): base4
+Fetching cards for set 'base4' from the Pokemon TCG API...
+@omsmith04 ➜ .../DS-2002-F25/Labs/Lab_04/pokemon_lab (Lab_4) $
+
+@omsmith04 ➜ .../DS-2002-F25/Labs/Lab_04/pokemon_lab (Lab_4) $ make all
+--- Starting Portfolio Build Workflow ---
+Do you want to add a NEW card set? (yes/no)
+no
+Do you want to refresh ALL existing card sets? (yes/no)
+yes
+make[1]: Entering directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+--- Refreshing All Card Sets ---
+Refreshing all card sets in card_set_lookup/...
+Updating set '*'...
+curl: (22) The requested URL returned error: 504
+Error: failed to update set '*'.
+Updating set 'base1'...
+Wrote data to card_set_lookup/base1.json
+Updating set 'base4'...
+Wrote data to card_set_lookup/base4.json
+All card sets have been refreshed.
+make[1]: Leaving directory '/workspaces/DS-2002-F25/Labs/Lab_04/pokemon_lab'
+--- Starting Production Pipeline ---
+
+Step 1: Running ETL (update_portfolio.py)...
+Wrote portfolio to card_portfolio.csv
+
+Step 2: Running Reporting (generate_summary.py)...
+----------------------------------------
+Portfolio Summary for: card_portfolio.csv
+----------------------------------------
+Total Portfolio Value: $5,686.24
+
+--- Most Valuable Card ---
+Name:  Charizard
+ID:    base1-4
+Value: $458.29
+----------------------------------------
+
+--- Production Pipeline Complete ---
+@omsmith04 ➜ .../DS-2002-F25/Labs/Lab_04/pokemon_lab (Lab_4) $ 
